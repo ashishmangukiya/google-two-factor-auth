@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           google authentication
+        </title>
+         <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=no" >
+     
+    </head>
+    <body>
+        <h2>create account</h2>
+        <form method="post" action="/signup">
+            <input type="text" name="emailId" placeholder="enter email-id" autofocus><br><br>
+            <input type="password" name="password" placeholder="enter password"><br><br>
+            <button >create</button>
+        </form><br>
+         <form method="post" action="/login">
+            <input type="submit" value="login"><br><br>
+        </form>
+        <h3>{{status}}</h3>
+    </body>
+</html>

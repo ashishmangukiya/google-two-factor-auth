@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           google authentication
+        </title>
+           <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width , initial-scale=1.0 , user-scalable=no" >
+    </head>
+    <body>
+        <h2>scan below QR code through google authenticator app</h2>
+        <img src="{{image}}">
+        <form method="post" action="/verify">
+        <input class="special" readonly='true' type="text" size="25" name="emailId" value="{{emailId}}"><br><br>
+        <input type="number" name="token" placeholder="enter code here"><br><br>
+        <input type="submit" value="validate">
+        </form>
+        <h3>{{status}}</h3>
+    </body>
+</html>
